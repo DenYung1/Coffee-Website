@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Brew Coffee | Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/mountain-brew-coffee-logo.jpg" alt="Mountain Brew Coffee Logo" class="logo">
+        </div>
+        <div id="greeting" class="greeting"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Our Coffees</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="page-header">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Reach out with questions, feedback, or wholesale inquiries.</p>
+        </section>
+
+        <section class="contact-container">
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <h3>Visit Our Roastery</h3>
+                    <p>Community 17 Lashibi<br>Tema</p>
+                </div>
+                <div class="contact-detail">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 8am - 5pm<br>
+                    Saturday: 9am - 3pm<br>
+                    Sunday: Closed</p>
+                </div>
+                <div class="contact-detail">
+                    <h3>Get In Touch</h3>
+                    <p>Email: info@mountainbrew.com<br>
+                    Phone: (233) 543584177</p>
+                </div>
+                <div class="contact-map">
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127046.15427223317!2d-0.07104564316706605!3d5.6853230372260075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102078a5400d3e29%3A0xccdf4b5d4026488b!2sTema!5e0!3m2!1sen!2sgh!4v1740943814959!5m2!1sen!2sgh" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <div id="form-status" class="form-status"></div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="general">General Inquiry</option>
+                            <option value="wholesale">Wholesale Information</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="support">Customer Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn submit-btn">Send Message</button>
+                    </div>
+                </form>
+
+                <div class="previous-contacts" id="previous-contacts">
+                    <h3>Your Previous Messages</h3>
+                    <div id="previous-messages-container">
+                        <!-- Previous messages will be added here via JavaScript -->
+                        <p id="no-messages">No previous messages found.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Coffee Assistant</h3>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">Hi there! How can I help you with your coffee today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    
+    <div class="chat-icon" id="chat-icon">
+        <span>☕</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/mountain-brew-coffee-logo.jpg" alt="Mountain Brew Coffee Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Our Coffees</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>Community 17, Lashibi<br>
+                Tema<br>
+                Email: info@mountainbrew.com<br>
+                Phone: (233) 543584177</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mountain Brew Coffee. All rights reserved. Built By Dennis Tetteh Abayateye</p>
+        </div>
+    </footer>
+</body>
+</html>

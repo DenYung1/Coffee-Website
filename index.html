@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Brew Coffee | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/mountain-brew-coffee-logo.jpg" alt="Mountain Brew Coffee Logo" class="logo">
+        </div>
+        <div id="greeting" class="greeting"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Our Coffees</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Mountain Brew Coffee</h1>
+                <p>Artisan coffee roasted at altitude for extraordinary flavor.</p>
+                <a href="products.html" class="btn">Explore Our Coffees</a>
+            </div>
+        </section>
+
+        <section class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="images/Coffee beans being roasted.jpeg" alt="Coffee beans being roasted" class="slide-img">
+                    <div class="slide-caption">Sourced from sustainable farms worldwide</div>
+                </div>
+                <div class="slide">
+                    <img src="images/Our cozy cafe.jpg" alt="Our cozy cafe" class="slide-img">
+                    <div class="slide-caption">Visit our mountain cafe for the full experience</div>
+                </div>
+                <div class="slide">
+                    <img src="images/Coffee brewing.jpeg" alt="Coffee brewing" class="slide-img">
+                    <div class="slide-caption">Expertly roasted and brewed to perfection</div>
+                </div>
+            </div>
+            <button class="slider-btn prev">&#10094;</button>
+            <button class="slider-btn next">&#10095;</button>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h2>Ethically Sourced</h2>
+                <p>Direct partnerships with small-scale farmers ensure fair prices and sustainable practices.</p>
+            </div>
+            <div class="feature-card">
+                <h2>High Altitude Roasted</h2>
+                <p>Our mountain location provides unique roasting conditions that enhance flavor complexity.</p>
+            </div>
+            <div class="feature-card">
+                <h2>Freshly Delivered</h2>
+                <p>From our roastery to your doorstep within 48 hours of roasting for optimal freshness.</p>
+            </div>
+        </section>
+
+        <section class="coffee-tip">
+            <h2>Coffee Tip of the Day</h2>
+            <p id="random-tip">Click below for a coffee brewing tip!</p>
+            <button id="tip-button" class="btn">Get Coffee Tip</button>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Coffee Assistant</h3>
+            <button id="close-chat">×</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="bot-message">Hi there! How can I help you with your coffee today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button id="send-message">Send</button>
+        </div>
+    </div>
+    
+    <div class="chat-icon" id="chat-icon">
+        <span>☕</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/mountain-brew-coffee-logo.jpg" alt="Mountain Brew Coffee Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Our Coffees</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <p>Community 17, Lashibi<br>
+                Tema<br>
+                Email: info@mountainbrew.com<br>
+                Phone: (233) 543584177</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Mountain Brew Coffee. All rights reserved. Built By Dennis Tetteh Abayateye</p>
+        </div>
+    </footer>
+</body>
+</html>
